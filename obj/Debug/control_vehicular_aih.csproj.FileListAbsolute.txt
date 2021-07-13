@@ -1,0 +1,9 @@
+C:\control_vehicular\control_vehicular\bin\Debug\control_vehicular_aih.exe
+C:\control_vehicular\control_vehicular\bin\Debug\control_vehicular_aih.pdb
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.csproj.AssemblyReference.cache
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.Login.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.Properties.Resources.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.csproj.GenerateResource.cache
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.csproj.CoreCompileInputs.cache
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.exe
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.pdb
