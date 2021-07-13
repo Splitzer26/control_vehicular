@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace control_vehicular_aih
 {
-    public partial class Form1 : Form
+    public partial class form_historial_de_recorrido : Form
     {
-        public Form1()
+        public form_historial_de_recorrido()
         {
             InitializeComponent();
         }

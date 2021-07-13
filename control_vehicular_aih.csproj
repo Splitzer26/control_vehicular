@@ -44,11 +44,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="EntryPoint.cs" />
+    <Compile Include="form_agregar_seguro_vehicular.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="form_agregar_seguro_vehicular.Designer.cs">
+      <DependentUpon>form_agregar_seguro_vehicular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_agregar_vehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_agregar_vehiculo.Designer.cs">
+      <DependentUpon>form_agregar_vehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_conductores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_conductores.Designer.cs">
+      <DependentUpon>form_conductores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_historial_de_recorrido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_historial_de_recorrido.Designer.cs">
+      <DependentUpon>form_historial_de_recorrido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_inventario.Designer.cs">
+      <DependentUpon>form_inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_recorrido_y_combustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_recorrido_y_combustible.Designer.cs">
+      <DependentUpon>form_recorrido_y_combustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_reportes.Designer.cs">
+      <DependentUpon>form_reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_seguro_vehicular_y_revision_tecnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_seguro_vehicular_y_revision_tecnica.Designer.cs">
+      <DependentUpon>form_seguro_vehicular_y_revision_tecnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -58,6 +107,33 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form_agregar_seguro_vehicular.resx">
+      <DependentUpon>form_agregar_seguro_vehicular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_agregar_vehiculo.resx">
+      <DependentUpon>form_agregar_vehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_conductores.resx">
+      <DependentUpon>form_conductores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_historial_de_recorrido.resx">
+      <DependentUpon>form_historial_de_recorrido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_inventario.resx">
+      <DependentUpon>form_inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_recorrido_y_combustible.resx">
+      <DependentUpon>form_recorrido_y_combustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_reportes.resx">
+      <DependentUpon>form_reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_seguro_vehicular_y_revision_tecnica.resx">
+      <DependentUpon>form_seguro_vehicular_y_revision_tecnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +165,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aih_page_header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assessment_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_ind_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_date_range_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_assignment_turned_in_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_motorcycle_white_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_dashboard_white_18dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

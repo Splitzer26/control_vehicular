@@ -33,14 +33,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_usuario
@@ -55,6 +55,7 @@
             this.txt_usuario.TabIndex = 1;
             this.txt_usuario.Text = "USUARIO";
             this.txt_usuario.Enter += new System.EventHandler(this.txt_usuario_Enter);
+            this.txt_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_usuario_KeyPress);
             this.txt_usuario.Leave += new System.EventHandler(this.txt_usuario_Leave);
             // 
             // txt_contraseña
@@ -66,10 +67,11 @@
             this.txt_contraseña.Location = new System.Drawing.Point(348, 125);
             this.txt_contraseña.Name = "txt_contraseña";
             this.txt_contraseña.Size = new System.Drawing.Size(389, 23);
-            this.txt_contraseña.TabIndex = 3;
+            this.txt_contraseña.TabIndex = 2;
             this.txt_contraseña.Text = "CONTRASEÑA";
             this.txt_contraseña.TextChanged += new System.EventHandler(this.txt_contraseña_TextChanged);
             this.txt_contraseña.Enter += new System.EventHandler(this.txt_contraseña_Enter);
+            this.txt_contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_contraseña_KeyPress);
             this.txt_contraseña.Leave += new System.EventHandler(this.txt_contraseña_Leave);
             // 
             // button1
@@ -85,7 +87,7 @@
             this.button1.Location = new System.Drawing.Point(348, 184);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(389, 40);
-            this.button1.TabIndex = 4;
+            this.button1.TabIndex = 3;
             this.button1.Text = "ACCEDER";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -112,15 +114,17 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "@technology";
             // 
-            // pictureBox3
+            // linkLabel1
             // 
-            this.pictureBox3.Image = global::control_vehicular_aih.Properties.Resources.aih_page_header;
-            this.pictureBox3.Location = new System.Drawing.Point(52, 86);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(145, 89);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
+            this.linkLabel1.Location = new System.Drawing.Point(469, 254);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(146, 13);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿Ha olvidado su contraseña?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureBox2
             // 
@@ -146,17 +150,15 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // linkLabel1
+            // pictureBox3
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Gray;
-            this.linkLabel1.Location = new System.Drawing.Point(469, 254);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(146, 13);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿Ha olvidado su contraseña?";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.pictureBox3.Image = global::control_vehicular_aih.Properties.Resources.aih_page_header;
+            this.pictureBox3.Location = new System.Drawing.Point(52, 86);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(145, 89);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
             // 
             // Login
             // 
@@ -178,9 +180,9 @@
             this.Text = "Iniciar Sesion";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

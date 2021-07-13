@@ -1,7 +1,7 @@
 ﻿
 namespace control_vehicular_aih
 {
-    partial class Form1
+    partial class form_historial_de_recorrido
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace control_vehicular_aih
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // form_historial_de_recorrido
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(848, 462);
+            this.Name = "form_historial_de_recorrido";
+            this.Text = "Historial de Recorrido";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

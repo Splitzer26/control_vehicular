@@ -7,3 +7,11 @@ C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.csproj.Ge
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.csproj.CoreCompileInputs.cache
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.exe
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.pdb
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.Menu.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_agregar_vehiculo.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_conductores.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_historial_de_recorrido.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_inventario.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_recorrido_y_combustible.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_reportes.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_seguro_vehicular_y_revision_tecnica.resources

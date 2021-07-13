@@ -61,7 +61,7 @@ namespace control_vehicular_aih
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
 
         }
 
@@ -74,7 +74,9 @@ namespace control_vehicular_aih
         {
             if(txt_contraseña.Text=="admin" && txt_usuario.Text=="admin")
             {
-
+                Menu menu = new Menu();
+                menu.Show();
+                //this.Dispose();
             }
             else
             {
@@ -87,6 +89,22 @@ namespace control_vehicular_aih
         private void txt_contraseña_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_contraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+               //Codigo inicio de sesion
+            }
+        }
+
+        private void txt_usuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                //Codigo inicio de sesion
+            }
         }
     }
 }
