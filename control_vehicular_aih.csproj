@@ -45,6 +45,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="form_actualizar_conductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_actualizar_conductor.Designer.cs">
+      <DependentUpon>form_actualizar_conductor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_actualizar_seguro_vehicular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_actualizar_seguro_vehicular.Designer.cs">
+      <DependentUpon>form_actualizar_seguro_vehicular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_agregar_conductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_agregar_conductor.Designer.cs">
+      <DependentUpon>form_agregar_conductor.cs</DependentUpon>
+    </Compile>
     <Compile Include="form_agregar_seguro_vehicular.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,17 +75,35 @@
     <Compile Include="form_agregar_vehiculo.Designer.cs">
       <DependentUpon>form_agregar_vehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_combustible_en_vehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_combustible_en_vehiculo.Designer.cs">
+      <DependentUpon>form_combustible_en_vehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="form_conductores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form_conductores.Designer.cs">
       <DependentUpon>form_conductores.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_control_de_recorrido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_control_de_recorrido.Designer.cs">
+      <DependentUpon>form_control_de_recorrido.cs</DependentUpon>
+    </Compile>
     <Compile Include="form_historial_de_recorrido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form_historial_de_recorrido.Designer.cs">
       <DependentUpon>form_historial_de_recorrido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ingreso_de_combustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ingreso_de_combustible.Designer.cs">
+      <DependentUpon>form_ingreso_de_combustible.cs</DependentUpon>
     </Compile>
     <Compile Include="form_inventario.cs">
       <SubType>Form</SubType>
@@ -107,17 +143,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form_actualizar_conductor.resx">
+      <DependentUpon>form_actualizar_conductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_actualizar_seguro_vehicular.resx">
+      <DependentUpon>form_actualizar_seguro_vehicular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_agregar_conductor.resx">
+      <DependentUpon>form_agregar_conductor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_agregar_seguro_vehicular.resx">
       <DependentUpon>form_agregar_seguro_vehicular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_agregar_vehiculo.resx">
       <DependentUpon>form_agregar_vehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form_combustible_en_vehiculo.resx">
+      <DependentUpon>form_combustible_en_vehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_conductores.resx">
       <DependentUpon>form_conductores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form_control_de_recorrido.resx">
+      <DependentUpon>form_control_de_recorrido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form_historial_de_recorrido.resx">
       <DependentUpon>form_historial_de_recorrido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ingreso_de_combustible.resx">
+      <DependentUpon>form_ingreso_de_combustible.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_inventario.resx">
       <DependentUpon>form_inventario.cs</DependentUpon>

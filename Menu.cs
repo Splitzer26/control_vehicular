@@ -19,6 +19,7 @@ namespace control_vehicular_aih
         public Menu()
         {
             InitializeComponent();
+            //Añadir alerta de registros vehiculares y taller
         }
         private void OpenChildForm(Form childForm)
         {
@@ -73,7 +74,7 @@ namespace control_vehicular_aih
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new form_historial_de_recorrido());
+            OpenChildForm(new form_recorrido_y_combustible());
         }
 
         private void button6_Click(object sender, EventArgs e)
