@@ -37,6 +37,7 @@ namespace control_vehicular_aih
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 462);
             this.Name = "form_reportes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes";
             this.ResumeLayout(false);
 

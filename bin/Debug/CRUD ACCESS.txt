@@ -1,0 +1,140 @@
+INSERTAR
+_________________________________________________________________________________
+ try
+            {
+                CONECTAR.Open();
+                OleDbCommand COMANDO = new OleDbCommand();
+                COMANDO.Connection = CONECTAR;
+                COMANDO.CommandText = "INSERT INTO PERSONAL (COD, NOM, DIR, SEX, EDAD) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "','" + numericUpDown1.Value.ToString()+ "')";
+                COMANDO.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error= " + ex, "ERROR");
+            }
+
+CARGAR DATAGRID DESDE UN INICIO
+___________________________________________________________________________________
+
+try
+            {
+                CONECTAR.Open();
+                OleDbCommand COMANDO = new OleDbCommand();
+                COMANDO.Connection = CONECTAR;
+                COMANDO.CommandText = "SELECT * FROM EMPLEADO";
+                OleDbDataReader LEER = COMANDO.ExecuteReader();
+                while (LEER.Read())
+                {
+                    int N = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[N].Cells[0].Value = LEER["CODEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[1].Value = LEER["NO1EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[2].Value = LEER["NO2EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[3].Value = LEER["AP1EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[4].Value = LEER["AP2EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[5].Value = LEER["DIREMP"].ToString();
+                    dataGridView1.Rows[N].Cells[6].Value = LEER["TELEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[7].Value = LEER["FENEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[8].Value = LEER["PROEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[9].Value = LEER["CAREMP"].ToString();
+                    dataGridView1.Rows[N].Cells[10].Value = LEER["SUBEMP"].ToString();
+                    dataGridView1.ReadOnly = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.Beep();
+                MessageBox.Show("Error= " + ex, "ERROR");
+            }
+            CONECTAR.Close();
+
+CARGAR DATAGRID CON BUSQUEDA
+_________________________________________________________________________
+try
+            {
+
+                CONECTAR.Open();
+                OleDbCommand COMANDO = new OleDbCommand();
+                COMANDO.Connection = CONECTAR;
+                if (comboBox1.Text == "Primer Nombre")
+                {
+                    COMANDO.CommandText = "SELECT * FROM EMPLEADO WHERE NO1EMP='" + textBox1 + "'";
+                }
+                else if (comboBox1.Text == "Segundo Apellido")
+                {
+                    COMANDO.CommandText = "SELECT * FROM EMPLEADO WHERE NO2EMP='" + textBox1 + "'";
+                }
+                else if (comboBox1.Text == "Primer Apellido")
+                {
+                    COMANDO.CommandText = "SELECT * FROM EMPLEADO WHERE AP1EMP='" + textBox1 + "'";
+                }
+                else if (comboBox1.Text == "Segundo Apellido")
+                {
+                    COMANDO.CommandText = "SELECT * FROM EMPLEADO WHERE AP2EMP='" + textBox1 + "'";
+                }
+                OleDbDataReader LEER = COMANDO.ExecuteReader();
+                while (LEER.Read())
+                {
+                    int N = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[N].Cells[0].Value = LEER["CODEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[1].Value = LEER["NO1EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[2].Value = LEER["NO2EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[3].Value = LEER["AP1EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[4].Value = LEER["AP2EMP"].ToString();
+                    dataGridView1.Rows[N].Cells[5].Value = LEER["DIREMP"].ToString();
+                    dataGridView1.Rows[N].Cells[6].Value = LEER["TELEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[7].Value = LEER["FENEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[8].Value = LEER["PROEMP"].ToString();
+                    dataGridView1.Rows[N].Cells[9].Value = LEER["CAREMP"].ToString();
+                    dataGridView1.Rows[N].Cells[10].Value = LEER["SUBEMP"].ToString();
+                    dataGridView1.ReadOnly = true;
+                }
+                CONECTAR.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.Beep();
+                MessageBox.Show("Error= " + ex, "ERROR");
+            }
+
+UPDATE
+________________________________________________________________
+try
+            {
+                CONECTAR.Open();
+                OleDbCommand COMANDO = new OleDbCommand();
+                COMANDO.Connection = CONECTAR;
+                COMANDO.CommandText = "UPDATE EMPLEADOS SET NOMEMP='" + textBox2.Text + "', DIREMP='" + textBox3.Text + "', CAREMP = '"+comboBox1.Text+"',SEXEMP='" + comboBox2.Text + "',NACEMP='"+comboBox3.Text+"', SUEEMP='" + numericUpDown1.Value + "' WHERE CODEMP='" + textBox1.Text + "'";
+                COMANDO.ExecuteNonQuery();
+                CONECTAR.Close();
+                MessageBox.Show("Actualizacion Completa", "Se ha actualizado exitosamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error= " + ex, "ERROR");
+            }
+            finally
+            {
+                CONECTAR.Close();
+            }
+
+DELETE
+__________________________________________________________________
+try
+            {
+                CONECTAR.Open();
+                OleDbCommand COMANDO = new OleDbCommand();
+                COMANDO.Connection = CONECTAR;
+                COMANDO.CommandText = "DELETE FROM EMPLEADOS WHERE CODEMP='" + textBox1.Text + "'";
+                COMANDO.ExecuteNonQuery();
+                MessageBox.Show("Eliminacion Exitosa", "Se ha eliminado exitosamente");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error= " + ex, "ERROR");
+
+            }
+            finally
+            {
+                CONECTAR.Close();
+            }

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace control_vehicular_aih
 {
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.

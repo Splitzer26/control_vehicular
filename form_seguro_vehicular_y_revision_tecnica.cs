@@ -15,5 +15,17 @@ namespace control_vehicular_aih
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form_agregar_seguro_vehicular form_Agregar_Seguro_Vehicular = new form_agregar_seguro_vehicular();
+            form_Agregar_Seguro_Vehicular.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            form_actualizar_seguro_vehicular form_Actualizar_Seguro_Vehicular = new form_actualizar_seguro_vehicular();
+            form_Actualizar_Seguro_Vehicular.Show();
+        }
     }
 }
