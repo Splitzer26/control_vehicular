@@ -45,9 +45,10 @@ namespace control_vehicular_aih
                     dataGridView1.Rows[N].Cells[0].Value = LEER["CODIGO_CONDUCTOR"].ToString();
                     dataGridView1.Rows[N].Cells[1].Value = LEER["NOMBRE"].ToString();
                     dataGridView1.Rows[N].Cells[2].Value = LEER["ID"].ToString();
-                    dataGridView1.Rows[N].Cells[3].Value = LEER["LICENCIA"].ToString();
-                    dataGridView1.Rows[N].Cells[4].Value = LEER["FECHA_VENCIMIENTO_LICENCIA"].ToString();
-                    dataGridView1.Rows[N].Cells[5].Value = LEER["VEHICULO_ASOCIADO"].ToString();
+                    dataGridView1.Rows[N].Cells[3].Value = LEER["TELEFONO"].ToString();
+                    dataGridView1.Rows[N].Cells[4].Value = LEER["LICENCIA"].ToString();
+                    dataGridView1.Rows[N].Cells[5].Value = LEER["FECHA_VENCIMIENTO_LICENCIA"].ToString();
+                    dataGridView1.Rows[N].Cells[6].Value = LEER["VEHICULO_ASOCIADO"].ToString();
                     dataGridView1.ReadOnly = true;
                 }
             }
