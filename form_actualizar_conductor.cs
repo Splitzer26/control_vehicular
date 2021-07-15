@@ -25,9 +25,19 @@ namespace control_vehicular_aih
                 CONECTAR.Open();
                 OleDbCommand COMANDO = new OleDbCommand();
                 COMANDO.Connection = CONECTAR;
-                COMANDO.CommandText = "UPDATE conductores SET NOMBRE='" + textBox2.Text + "', ID='" + textBox4.Text + "', TELEFONO= '" + textBox3.Text + "', LICENCIA='" + textBox1.Text + "',FECHA_VENCIMIENTO_LICENCIA='" + dateTimePicker1.Value + "', VEHICULO_ASOCIADO='" + comboBox2.Text + "' WHERE CODIGO_CONDUCTOR='" + comboBox3.Text + "'";
+                COMANDO.CommandText = "UPDATE conductores SET NOMBRE= @name, ID=@id, TELEFONO=@phone, LICENCIA=@manager, FECHA_VENCIMIENTO_LICENCIA=@date, VEHICULO_ASOCIADO=@vehicle WHERE CODIGO_CONDUCTOR=@code";
+                COMANDO.Parameters.AddWithValue("@name", textBox2.Text);
+                COMANDO.Parameters.AddWithValue("@id", textBox4.Text);
+                COMANDO.Parameters.AddWithValue("@phone", textBox3.Text);
+                COMANDO.Parameters.AddWithValue("@manager", textBox1.Text);
+                COMANDO.Parameters.AddWithValue("@date", dateTimePicker1.Value);
+                COMANDO.Parameters.AddWithValue("@vehicle", comboBox2.Text);
+                COMANDO.Parameters.AddWithValue("@code", int.Parse(comboBox3.Text));
+                COMANDO.ExecuteNonQuery();
                 CONECTAR.Close();
                 MessageBox.Show("Actualizacion Completa", "Se ha actualizado exitosamente");
+                form_conductores form1 = new form_conductores();
+                form1.cargar_data();
             }
             catch (Exception ex)
             {
@@ -72,18 +82,11 @@ namespace control_vehicular_aih
         private void comboBox3_TextChanged(object sender, EventArgs e)
         {
             String codigo = comboBox3.Text;
-            MessageBox.Show("Codigo guardado: " + codigo);
-            
             CONECTAR.Open();
-            MessageBox.Show("Conexion abierta");
             OleDbCommand COMANDO = new OleDbCommand();
-            MessageBox.Show("comando creado");
             COMANDO.Connection = CONECTAR;
-            MessageBox.Show("conexion establecida");
             COMANDO.CommandText = "SELECT * FROM conductores WHERE CODIGO_CONDUCTOR=" + codigo + "";
-            MessageBox.Show("Comando especificado");
             OleDbDataReader LEER_carro = COMANDO.ExecuteReader();
-            MessageBox.Show("Comando ejecutado");
             while (LEER_carro.Read())
             {
                 textBox2.Text = (LEER_carro["NOMBRE"]).ToString();

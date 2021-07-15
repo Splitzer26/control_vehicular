@@ -24,7 +24,6 @@ namespace control_vehicular_aih
             form_agregar_conductor form_Agregar_Conductor = new form_agregar_conductor();
             form_Agregar_Conductor.Show();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             form_actualizar_conductor form_Actualizar_Conductor = new form_actualizar_conductor();

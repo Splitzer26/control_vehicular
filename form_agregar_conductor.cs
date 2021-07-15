@@ -39,6 +39,8 @@ namespace control_vehicular_aih
                 COMANDO.ExecuteNonQuery();
                 MessageBox.Show("Se ha añadido correctamente el nuevo conductor", "Registro añadido exitosamente",MessageBoxButtons.OK);
                 limpiar_formulario();
+                form_conductores form1 = new form_conductores();
+                form1.cargar_data();
             }
             catch (Exception ex)
             {

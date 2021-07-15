@@ -56,12 +56,13 @@ namespace control_vehicular_aih
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -83,6 +84,7 @@ namespace control_vehicular_aih
             this.button1.TabIndex = 15;
             this.button1.Text = "AGREGAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label13
             // 
@@ -321,14 +323,6 @@ namespace control_vehicular_aih
             this.textBox8.Size = new System.Drawing.Size(195, 29);
             this.textBox8.TabIndex = 17;
             // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(595, 147);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(195, 29);
-            this.textBox9.TabIndex = 18;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -340,8 +334,8 @@ namespace control_vehicular_aih
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.numericUpDown2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox8);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.textBox6);
@@ -369,6 +363,13 @@ namespace control_vehicular_aih
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del vehiculo";
             // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(595, 149);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(195, 29);
+            this.numericUpDown2.TabIndex = 20;
+            // 
             // form_agregar_vehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -390,6 +391,7 @@ namespace control_vehicular_aih
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -423,8 +425,8 @@ namespace control_vehicular_aih
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }
