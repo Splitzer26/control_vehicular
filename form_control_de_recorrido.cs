@@ -11,6 +11,7 @@ namespace control_vehicular_aih
 {
     public partial class form_control_de_recorrido : Form
     {
+        public string COD_VEHICLE="";
         public form_control_de_recorrido()
         {
             InitializeComponent();
@@ -22,6 +23,21 @@ namespace control_vehicular_aih
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void form_control_de_recorrido_Load(object sender, EventArgs e)
         {
 
         }

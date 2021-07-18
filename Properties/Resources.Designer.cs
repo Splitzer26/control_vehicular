@@ -163,6 +163,16 @@ namespace control_vehicular_aih.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_settings_applications_white_36dp {
+            get {
+                object obj = ResourceManager.GetObject("ic_settings_applications_white_36dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_Maximizar {
             get {
                 object obj = ResourceManager.GetObject("Icono Maximizar", resourceCulture);

@@ -44,14 +44,12 @@ namespace control_vehicular_aih
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -74,6 +72,7 @@ namespace control_vehicular_aih
             this.button2.TabIndex = 16;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -182,7 +181,7 @@ namespace control_vehicular_aih
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 227);
+            this.label6.Location = new System.Drawing.Point(35, 193);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 24);
@@ -202,7 +201,7 @@ namespace control_vehicular_aih
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 189);
+            this.label5.Location = new System.Drawing.Point(35, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 24);
@@ -218,16 +217,6 @@ namespace control_vehicular_aih
             this.label10.Size = new System.Drawing.Size(79, 24);
             this.label10.TabIndex = 9;
             this.label10.Text = "Garantia";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 151);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Fabricante";
             // 
             // label3
             // 
@@ -283,17 +272,9 @@ namespace control_vehicular_aih
             this.textBox3.Size = new System.Drawing.Size(195, 29);
             this.textBox3.TabIndex = 12;
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(172, 147);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 29);
-            this.textBox4.TabIndex = 13;
-            // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(172, 185);
+            this.textBox5.Location = new System.Drawing.Point(173, 151);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(195, 29);
@@ -301,7 +282,7 @@ namespace control_vehicular_aih
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(172, 223);
+            this.textBox6.Location = new System.Drawing.Point(173, 189);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(195, 29);
@@ -340,14 +321,12 @@ namespace control_vehicular_aih
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.textBox6);
             this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label9);
@@ -386,6 +365,7 @@ namespace control_vehicular_aih
             this.Name = "form_agregar_vehiculo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INGRESO DE VEHICULO";
+            this.Load += new System.EventHandler(this.form_agregar_vehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -413,14 +393,12 @@ namespace control_vehicular_aih
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;

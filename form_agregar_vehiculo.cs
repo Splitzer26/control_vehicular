@@ -25,7 +25,17 @@ namespace control_vehicular_aih
         }
         public void limpiar_formulario()
         {
-
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            numericUpDown1.Value = 0;
+            numericUpDown2.Value = 0;
+            comboBox1.Text = "";
+            dateTimePicker1.Value = DateTime.Now;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,7 +45,7 @@ namespace control_vehicular_aih
                 CONECTAR.Open();
                 OleDbCommand COMANDO = new OleDbCommand();
                 COMANDO.Connection = CONECTAR;
-                COMANDO.CommandText = "INSERT INTO vehiculos (CODIGO_VEHICULO, VEHICULO, PLACA, MARCA, MODELO, COLOR, SERIE_DE_MOTOR, FECHA_ADQUISICION, GARANTIA, COMBUSTIBLE) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox7.Text + "','" + textBox8.Text + "','" + dateTimePicker1.Value + "','" + numericUpDown1.Value + "')";
+                COMANDO.CommandText = "INSERT INTO vehiculos (CODIGO_VEHICULO, VEHICULO, PLACA, MARCA, MODELO, COLOR, SERIE_DE_MOTOR, FECHA_ADQUISICION, GARANTIA, COMBUSTIBLE) VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox7.Text + "','" + textBox8.Text + "','" + dateTimePicker1.Value + "','" + numericUpDown2.Value + "','"+comboBox1.Text+"')";
                 COMANDO.ExecuteNonQuery();
                 MessageBox.Show("Se ha añadido correctamente el nuevo vehiculo", "Registro añadido exitosamente", MessageBoxButtons.OK);
                 limpiar_formulario();
@@ -50,6 +60,26 @@ namespace control_vehicular_aih
             {
                 CONECTAR.Close();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void form_agregar_vehiculo_Load(object sender, EventArgs e)
+        {
+            CONECTAR.Open();
+            OleDbCommand COMANDO = new OleDbCommand();
+            COMANDO.Connection = CONECTAR;
+            COMANDO.CommandText = "SELECT COMBUSTIBLE FROM combustible";
+            OleDbDataReader LEER = COMANDO.ExecuteReader();
+            while (LEER.Read())
+            {
+                comboBox1.Items.Add(LEER["COMBUSTIBLE"]).ToString();
+            }
+            CONECTAR.Close();
+           
         }
     }
 }

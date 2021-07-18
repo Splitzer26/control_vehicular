@@ -248,5 +248,8 @@
   <ItemGroup>
     <None Include="Resources\ic_dashboard_white_18dp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_settings_applications_white_36dp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
