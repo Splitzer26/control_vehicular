@@ -65,6 +65,7 @@ namespace control_vehicular_aih
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.button2.Location = new System.Drawing.Point(677, 420);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
@@ -76,6 +77,7 @@ namespace control_vehicular_aih
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.button1.Location = new System.Drawing.Point(436, 420);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
@@ -91,7 +93,7 @@ namespace control_vehicular_aih
             this.label13.Location = new System.Drawing.Point(400, 39);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(308, 24);
+            this.label13.Size = new System.Drawing.Size(242, 18);
             this.label13.TabIndex = 12;
             this.label13.Text = "Cantidad Inicial de Combustible (Gl)";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -102,7 +104,7 @@ namespace control_vehicular_aih
             this.label12.Location = new System.Drawing.Point(34, 84);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(185, 24);
+            this.label12.Size = new System.Drawing.Size(147, 18);
             this.label12.TabIndex = 11;
             this.label12.Text = "Rendimiento (Km/Gl)";
             // 
@@ -112,7 +114,7 @@ namespace control_vehicular_aih
             this.label11.Location = new System.Drawing.Point(34, 39);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(155, 24);
+            this.label11.Size = new System.Drawing.Size(121, 18);
             this.label11.TabIndex = 10;
             this.label11.Text = "Tipo combustible";
             // 
@@ -122,7 +124,7 @@ namespace control_vehicular_aih
             this.comboBox1.Location = new System.Drawing.Point(220, 36);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(147, 32);
+            this.comboBox1.Size = new System.Drawing.Size(147, 26);
             this.comboBox1.TabIndex = 13;
             // 
             // numericUpDown1
@@ -130,7 +132,7 @@ namespace control_vehicular_aih
             this.numericUpDown1.Location = new System.Drawing.Point(235, 82);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(133, 29);
+            this.numericUpDown1.Size = new System.Drawing.Size(133, 24);
             this.numericUpDown1.TabIndex = 21;
             // 
             // textBox10
@@ -138,7 +140,7 @@ namespace control_vehicular_aih
             this.textBox10.Location = new System.Drawing.Point(720, 36);
             this.textBox10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(70, 29);
+            this.textBox10.Size = new System.Drawing.Size(70, 24);
             this.textBox10.TabIndex = 20;
             // 
             // groupBox2
@@ -149,6 +151,7 @@ namespace control_vehicular_aih
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.groupBox2.Location = new System.Drawing.Point(13, 281);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
@@ -164,7 +167,7 @@ namespace control_vehicular_aih
             this.label7.Location = new System.Drawing.Point(400, 37);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 24);
+            this.label7.Size = new System.Drawing.Size(45, 18);
             this.label7.TabIndex = 6;
             this.label7.Text = "Color";
             // 
@@ -174,7 +177,7 @@ namespace control_vehicular_aih
             this.label8.Location = new System.Drawing.Point(400, 75);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 24);
+            this.label8.Size = new System.Drawing.Size(86, 18);
             this.label8.TabIndex = 7;
             this.label8.Text = "Serie Motor";
             // 
@@ -184,7 +187,7 @@ namespace control_vehicular_aih
             this.label6.Location = new System.Drawing.Point(35, 193);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 24);
+            this.label6.Size = new System.Drawing.Size(62, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Modelo:";
             // 
@@ -194,7 +197,7 @@ namespace control_vehicular_aih
             this.label9.Location = new System.Drawing.Point(400, 113);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(168, 24);
+            this.label9.Size = new System.Drawing.Size(128, 18);
             this.label9.TabIndex = 8;
             this.label9.Text = "Fecha Adquisicion";
             // 
@@ -204,7 +207,7 @@ namespace control_vehicular_aih
             this.label5.Location = new System.Drawing.Point(35, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 24);
+            this.label5.Size = new System.Drawing.Size(50, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Marca";
             // 
@@ -214,7 +217,7 @@ namespace control_vehicular_aih
             this.label10.Location = new System.Drawing.Point(400, 151);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 24);
+            this.label10.Size = new System.Drawing.Size(64, 18);
             this.label10.TabIndex = 9;
             this.label10.Text = "Garantia";
             // 
@@ -224,7 +227,7 @@ namespace control_vehicular_aih
             this.label3.Location = new System.Drawing.Point(34, 113);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 24);
+            this.label3.Size = new System.Drawing.Size(45, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Placa";
             // 
@@ -234,7 +237,7 @@ namespace control_vehicular_aih
             this.label1.Location = new System.Drawing.Point(34, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 24);
+            this.label1.Size = new System.Drawing.Size(72, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codigo(*)";
             // 
@@ -244,7 +247,7 @@ namespace control_vehicular_aih
             this.label2.Location = new System.Drawing.Point(34, 75);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 24);
+            this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Vehiculo(*)";
             // 
@@ -253,7 +256,7 @@ namespace control_vehicular_aih
             this.textBox1.Location = new System.Drawing.Point(172, 33);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 29);
+            this.textBox1.Size = new System.Drawing.Size(195, 24);
             this.textBox1.TabIndex = 10;
             // 
             // textBox2
@@ -261,7 +264,7 @@ namespace control_vehicular_aih
             this.textBox2.Location = new System.Drawing.Point(172, 71);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 29);
+            this.textBox2.Size = new System.Drawing.Size(195, 24);
             this.textBox2.TabIndex = 11;
             // 
             // textBox3
@@ -269,7 +272,7 @@ namespace control_vehicular_aih
             this.textBox3.Location = new System.Drawing.Point(172, 109);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 29);
+            this.textBox3.Size = new System.Drawing.Size(195, 24);
             this.textBox3.TabIndex = 12;
             // 
             // textBox5
@@ -277,7 +280,7 @@ namespace control_vehicular_aih
             this.textBox5.Location = new System.Drawing.Point(173, 151);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(195, 29);
+            this.textBox5.Size = new System.Drawing.Size(195, 24);
             this.textBox5.TabIndex = 14;
             // 
             // textBox6
@@ -285,7 +288,7 @@ namespace control_vehicular_aih
             this.textBox6.Location = new System.Drawing.Point(173, 189);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(195, 29);
+            this.textBox6.Size = new System.Drawing.Size(195, 24);
             this.textBox6.TabIndex = 15;
             // 
             // textBox7
@@ -293,7 +296,7 @@ namespace control_vehicular_aih
             this.textBox7.Location = new System.Drawing.Point(595, 33);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(195, 29);
+            this.textBox7.Size = new System.Drawing.Size(195, 24);
             this.textBox7.TabIndex = 16;
             // 
             // textBox8
@@ -301,7 +304,7 @@ namespace control_vehicular_aih
             this.textBox8.Location = new System.Drawing.Point(595, 71);
             this.textBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(195, 29);
+            this.textBox8.Size = new System.Drawing.Size(195, 24);
             this.textBox8.TabIndex = 17;
             // 
             // dateTimePicker1
@@ -310,7 +313,7 @@ namespace control_vehicular_aih
             this.dateTimePicker1.Location = new System.Drawing.Point(595, 109);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(195, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(195, 24);
             this.dateTimePicker1.TabIndex = 19;
             // 
             // groupBox1
@@ -333,6 +336,7 @@ namespace control_vehicular_aih
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.groupBox1.Location = new System.Drawing.Point(13, 12);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
@@ -346,7 +350,7 @@ namespace control_vehicular_aih
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(595, 149);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(195, 29);
+            this.numericUpDown2.Size = new System.Drawing.Size(195, 24);
             this.numericUpDown2.TabIndex = 20;
             // 
             // form_agregar_vehiculo

@@ -20,5 +20,10 @@ namespace control_vehicular_aih
         {
             this.Dispose();
         }
+
+        private void form_combustible_en_vehiculo_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+        }
     }
 }
