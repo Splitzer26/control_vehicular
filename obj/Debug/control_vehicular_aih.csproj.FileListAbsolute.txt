@@ -47,3 +47,28 @@ C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_comb
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_control_de_recorrido.resources
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_ingreso_de_combustible.resources
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_actualizar_vehiculo.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\bin\Debug\control_vehicular_aih.exe
+C:\Users\Jose Cubas\Desktop\control de vehiculos\bin\Debug\control_vehicular_aih.pdb
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.csprojAssemblyReference.cache
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_actualizar_conductor.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_actualizar_seguro_vehicular.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_actualizar_vehiculo.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_agregar_conductor.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_agregar_seguro_vehicular.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_agregar_vehiculo.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_combustible_en_vehiculo.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_conductores.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_control_de_recorrido.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_historial_de_recorrido.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_ingreso_de_combustible.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_inventario.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_recorrido_y_combustible.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_reportes.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.form_seguro_vehicular_y_revision_tecnica.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.Menu.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.Login.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.Properties.Resources.resources
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.csproj.GenerateResource.cache
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.csproj.CoreCompileInputs.cache
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.exe
+C:\Users\Jose Cubas\Desktop\control de vehiculos\obj\Debug\control_vehicular_aih.pdb

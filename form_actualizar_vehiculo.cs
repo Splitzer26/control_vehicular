@@ -61,25 +61,33 @@ namespace control_vehicular_aih
 
         private void comboBox2_TextChanged(object sender, EventArgs e)
         {
-            String codigo = comboBox2.Text;
-            CONECTAR.Open();
-            OleDbCommand COMANDO = new OleDbCommand();
-            COMANDO.Connection = CONECTAR;
-            COMANDO.CommandText = "SELECT * FROM vehiculos WHERE CODIGO_VEHICULO=" + codigo + "";
-            OleDbDataReader LEER_carro = COMANDO.ExecuteReader();
-            while (LEER_carro.Read())
+            if(comboBox2.Text=="")
             {
-                textBox2.Text = (LEER_carro["VEHICULO"]).ToString();
-                textBox3.Text = (LEER_carro["PLACA"]).ToString();
-                textBox5.Text = (LEER_carro["MARCA"]).ToString();
-                textBox6.Text = (LEER_carro["MODELO"]).ToString();
-                textBox7.Text = (LEER_carro["COLOR"]).ToString();
-                textBox8.Text = (LEER_carro["SERIE_DE_MOTOR"]).ToString();
-                dateTimePicker1.Value = DateTime.Parse((LEER_carro["FECHA_ADQUISICION"]).ToString());
-                numericUpDown2.Value = int.Parse(LEER_carro["GARANTIA"].ToString());
-                comboBox1.Text = (LEER_carro["COMBUSTIBLE"]).ToString();
+
             }
-            CONECTAR.Close();
+            else
+            {
+                String codigo = comboBox2.Text;
+                CONECTAR.Open();
+                OleDbCommand COMANDO = new OleDbCommand();
+                COMANDO.Connection = CONECTAR;
+                COMANDO.CommandText = "SELECT * FROM vehiculos WHERE CODIGO_VEHICULO=" + codigo + "";
+                OleDbDataReader LEER_carro = COMANDO.ExecuteReader();
+                while (LEER_carro.Read())
+                {
+                    textBox2.Text = (LEER_carro["VEHICULO"]).ToString();
+                    textBox3.Text = (LEER_carro["PLACA"]).ToString();
+                    textBox5.Text = (LEER_carro["MARCA"]).ToString();
+                    textBox6.Text = (LEER_carro["MODELO"]).ToString();
+                    textBox7.Text = (LEER_carro["COLOR"]).ToString();
+                    textBox8.Text = (LEER_carro["SERIE_DE_MOTOR"]).ToString();
+                    dateTimePicker1.Value = DateTime.Parse((LEER_carro["FECHA_ADQUISICION"]).ToString());
+                    numericUpDown2.Value = int.Parse(LEER_carro["GARANTIA"].ToString());
+                    comboBox1.Text = (LEER_carro["COMBUSTIBLE"]).ToString();
+                }
+                CONECTAR.Close();
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -105,12 +113,13 @@ namespace control_vehicular_aih
                 COMANDO.Parameters.AddWithValue("@date", dateTimePicker1.Value);
                 COMANDO.Parameters.AddWithValue("@end_date", numericUpDown2.Value);
                 COMANDO.Parameters.AddWithValue("@gas", comboBox1.Text);
-                COMANDO.Parameters.AddWithValue("@code", int.Parse(comboBox2.Text));
+                COMANDO.Parameters.AddWithValue("@code", comboBox2.Text);
                 COMANDO.ExecuteNonQuery();
                 CONECTAR.Close();
                 MessageBox.Show("Actualizacion Completa", "Se ha actualizado exitosamente");
                 form_conductores form1 = new form_conductores();
                 form1.cargar_data();
+                limpiar_formulario();
             }
             catch (Exception ex)
             {
@@ -120,6 +129,11 @@ namespace control_vehicular_aih
             {
                 CONECTAR.Close();
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

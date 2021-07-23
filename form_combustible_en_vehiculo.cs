@@ -11,6 +11,7 @@ namespace control_vehicular_aih
 {
     public partial class form_combustible_en_vehiculo : Form
     {
+        public string cod_vehicle;
         public form_combustible_en_vehiculo()
         {
             InitializeComponent();

@@ -39,6 +39,7 @@ namespace control_vehicular_aih
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -56,7 +57,7 @@ namespace control_vehicular_aih
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -70,7 +71,7 @@ namespace control_vehicular_aih
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 36);
-            this.button2.TabIndex = 20;
+            this.button2.TabIndex = 14;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -78,11 +79,11 @@ namespace control_vehicular_aih
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.button1.Location = new System.Drawing.Point(446, 420);
+            this.button1.Location = new System.Drawing.Point(512, 420);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 36);
-            this.button1.TabIndex = 19;
+            this.button1.TabIndex = 13;
             this.button1.Text = "ACTUALIZAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -111,7 +112,7 @@ namespace control_vehicular_aih
             this.textBox10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(70, 24);
-            this.textBox10.TabIndex = 20;
+            this.textBox10.TabIndex = 11;
             // 
             // numericUpDown1
             // 
@@ -119,7 +120,7 @@ namespace control_vehicular_aih
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(133, 24);
-            this.numericUpDown1.TabIndex = 21;
+            this.numericUpDown1.TabIndex = 12;
             // 
             // comboBox1
             // 
@@ -128,7 +129,7 @@ namespace control_vehicular_aih
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(147, 26);
-            this.comboBox1.TabIndex = 13;
+            this.comboBox1.TabIndex = 10;
             // 
             // label11
             // 
@@ -190,12 +191,22 @@ namespace control_vehicular_aih
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del vehiculo";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(172, 29);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(196, 26);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.TextChanged += new System.EventHandler(this.comboBox2_TextChanged);
+            // 
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(595, 149);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(195, 24);
-            this.numericUpDown2.TabIndex = 20;
+            this.numericUpDown2.TabIndex = 9;
             // 
             // dateTimePicker1
             // 
@@ -204,7 +215,7 @@ namespace control_vehicular_aih
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(195, 24);
-            this.dateTimePicker1.TabIndex = 19;
+            this.dateTimePicker1.TabIndex = 8;
             // 
             // textBox8
             // 
@@ -212,7 +223,7 @@ namespace control_vehicular_aih
             this.textBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(195, 24);
-            this.textBox8.TabIndex = 17;
+            this.textBox8.TabIndex = 7;
             // 
             // textBox7
             // 
@@ -220,7 +231,7 @@ namespace control_vehicular_aih
             this.textBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(195, 24);
-            this.textBox7.TabIndex = 16;
+            this.textBox7.TabIndex = 6;
             // 
             // textBox6
             // 
@@ -228,7 +239,7 @@ namespace control_vehicular_aih
             this.textBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(195, 24);
-            this.textBox6.TabIndex = 15;
+            this.textBox6.TabIndex = 5;
             // 
             // textBox5
             // 
@@ -236,7 +247,7 @@ namespace control_vehicular_aih
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(195, 24);
-            this.textBox5.TabIndex = 14;
+            this.textBox5.TabIndex = 4;
             // 
             // textBox3
             // 
@@ -244,7 +255,7 @@ namespace control_vehicular_aih
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(195, 24);
-            this.textBox3.TabIndex = 12;
+            this.textBox3.TabIndex = 3;
             // 
             // textBox2
             // 
@@ -252,7 +263,7 @@ namespace control_vehicular_aih
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(195, 24);
-            this.textBox2.TabIndex = 11;
+            this.textBox2.TabIndex = 2;
             // 
             // label2
             // 
@@ -344,26 +355,30 @@ namespace control_vehicular_aih
             this.label7.TabIndex = 6;
             this.label7.Text = "Color";
             // 
-            // comboBox2
+            // button3
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(172, 29);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 26);
-            this.comboBox2.TabIndex = 22;
-            this.comboBox2.TextChanged += new System.EventHandler(this.comboBox2_TextChanged);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.button3.Location = new System.Drawing.Point(356, 420);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(143, 36);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "ELIMINAR";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // form_actualizar_vehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 462);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "form_actualizar_vehiculo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "form_actualizar_vehiculo";
             this.Load += new System.EventHandler(this.form_actualizar_vehiculo_Load);
             this.groupBox2.ResumeLayout(false);
@@ -406,5 +421,6 @@ namespace control_vehicular_aih
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button3;
     }
 }
