@@ -76,7 +76,8 @@ namespace control_vehicular_aih
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            form_combustible_en_vehiculo combustible_En_Vehiculo = new form_combustible_en_vehiculo();
+            combustible_En_Vehiculo.cod_vehicle = comboBox1.Text;
             OpenChildForm(new form_combustible_en_vehiculo());
         }
 

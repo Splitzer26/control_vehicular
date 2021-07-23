@@ -56,6 +56,7 @@ namespace control_vehicular_aih
             {
                 MessageBox.Show("El millaje inicial no puede ser mayor que el final", "Error en Millajes", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
+
             else
             {
                 try
