@@ -25,5 +25,10 @@ namespace control_vehicular_aih
         {
             dateTimePicker1.Value = DateTime.Now;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

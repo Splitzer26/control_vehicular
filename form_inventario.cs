@@ -75,5 +75,13 @@ namespace control_vehicular_aih
         {
             cargar_data();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            padre.OpenChildForm(new form_actualizar_vehiculo());
+            form_actualizar_vehiculo actualizar_vehiculo = new form_actualizar_vehiculo();
+            actualizar_vehiculo.Show();
+        }
     }
 }

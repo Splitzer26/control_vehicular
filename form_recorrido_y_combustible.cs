@@ -13,6 +13,7 @@ namespace control_vehicular_aih
     public partial class form_recorrido_y_combustible : Form
     {
         public Form currentChildForm;
+        public string dato;
         private OleDbConnection CONECTAR = new OleDbConnection();
         public form_recorrido_y_combustible()
         {
@@ -37,23 +38,45 @@ namespace control_vehicular_aih
             childForm.BringToFront();
             childForm.Show();
         }
+        public void OpenChildForm_control(Form childForm)
+        {
+
+            //open only form
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            //End
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panel1.Controls.Add(childForm);
+            this.panel1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            form_control_de_recorrido code_vehicle = new form_control_de_recorrido();
-            code_vehicle.COD_VEHICLE = this.comboBox1.Text;
-            OpenChildForm(new form_control_de_recorrido());
+            form_control_de_recorrido fcr = new form_control_de_recorrido();
+            fcr.textBox5.Text = comboBox1.Text;
+            //dato = comboBox1.Text;
+            fcr.Show();
+            //OpenChildForm(new form_control_de_recorrido());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             form_ingreso_de_combustible ingreso_De_Combustible = new form_ingreso_de_combustible();
             ingreso_De_Combustible.cod_vehicle = comboBox1.Text;
-            OpenChildForm(new form_ingreso_de_combustible());
+            ingreso_De_Combustible.Show();
+            //OpenChildForm(new form_ingreso_de_combustible());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
             OpenChildForm(new form_combustible_en_vehiculo());
         }
 
@@ -90,8 +113,12 @@ namespace control_vehicular_aih
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if(comboBox2.Text=="" && comboBox1.Text != "")
             {
+                button1.Enabled = true;
+                button2.Enabled = true;
+                button3.Enabled = true;
                 String codigo = comboBox1.Text;
                 CONECTAR.Open();
                 OleDbCommand COMANDO = new OleDbCommand();

@@ -46,3 +46,4 @@ C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_agre
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_combustible_en_vehiculo.resources
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_control_de_recorrido.resources
 C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_ingreso_de_combustible.resources
+C:\control_vehicular\control_vehicular\obj\Debug\control_vehicular_aih.form_actualizar_vehiculo.resources
